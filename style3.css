@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    font-family: Trebuchet MS;
+    height: 100vh;  
+    color: #cd853f;
+}
+.box{
+    padding: 5% 2%;
+    width: 100%;
+    height: 100%;
+    background-image: url(auto.png);
+    object-fit: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.815);
+    /* color: #000; */
+    color: #e2e2e2;
+}
+h1{
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: center;
+    color: #cd853f;
+}
+p{
+    text-align: center;
+    margin-top: 2%;
+    word-spacing: 10px;
+    color: #e2e2e2bd;
+}
+.space{
+    width: 100%;
+    margin-top: 8%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.cont{
+    width: 16%;
+    margin: 0 2%;
+}
+.icon{
+    background: #cd853f;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 6%;
+    text-align: center;
+    padding-top: 25%;
+}
+.icon a svg{
+    width: 80px;
+    height: 80px;
+}
+.caps{
+    margin-top: 10%;
+    text-align: center;
+}
+.info{
+    margin-top: 10%;
+    text-align: center;
+}
+.info a{
+    color: #e2e2e2;
+    text-decoration: underline;
+    text-decoration-color: #807700;
+}
+.info a:hover{
+    color: #7c7a7a;
+}
+.copy{
+    margin-top: 6%;
+    font-size: .8em;
+}
+.copy span{
+    color: #807700;
+}
+@media only screen and (max-width: 700px){
+    body{
+        position: relative;
+        font-family: Trebuchet MS;
+        width: 100%;
+        height: 300vh;
+    }
+    .space{
+        width: 100%;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    .cont{
+        margin: 0 0 10% 0;
+        width: 100%;
+        height: 43vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .icon{
+        background: #cd853f;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 0 30%;
+        text-align: center;
+        padding: 10%;
+    }
+    .caps{
+        margin-top: 5%;
+        text-align: center;
+        margin-left: -6%;
+    }
+    .info{
+        width: 100%;
+        margin: 2% 0 0 -3%;
+        text-align: center;
+    }
+}
