@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    font-family: Trebuchet MS;
+    height: 100vh;
+    color: #e2e2e2;
+}
+.abtbox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 4% 5% 2% 3%;
+    background-image: url(auto.png);
+    object-fit: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.815);
+}
+.abtinfo{
+    margin-left: 5%;
+    background: #80770060;
+    width: 45%;
+    height: 100%;
+    padding-left: 5%;
+    border-radius: 12px;
+    
+}
+.picc{
+    display: none;
+}
+.abtinfo p{
+    font-size: 1em;
+    font-weight: 300;
+    word-spacing: 10px;
+    line-height: 2;
+    margin-top: 10%;
+}
+.abtinfo p::first-line{
+    line-height: 1.2;
+}
+.dot{
+    font-size: 4em;
+    font-weight: bolder;
+}
+.abtinfo p span{
+    color: #cd853f;
+}
+button{
+    background: #cd853f;
+    border: 2px solid transparent;
+    padding: 12px 34px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-size: .8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin-top: 10%;
+    transition: transform 0.5s;
+}
+button a{
+    color: #e2e2e2;
+    text-decoration: none;
+}
+button::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: .5s;
+    z-index: -1;
+}
+button:hover{
+    transform: scale(1.2);
+    outline: 1px solid #e2e2e2;
+}
+button:hover::before{
+    background-color: rgba(0, 0, 0, 0.76);
+    left: 0;
+}
+.pic{
+    background: transparent;
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    object-position: center -70px;
+    margin-left: 10%;
+    margin-top: 1.5%;
+}
+.socials{
+    margin-top: -2.5%;
+    margin-left: 87%;
+    display: flex;
+}
+.svg{
+    background: #cd853f;
+    padding: 7px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.5s;
+    margin-left: 2%;
+}
+.svg:nth-child(2){
+    background: #807700;
+}
+.svg:nth-child(4){
+    background: #807700;
+}
+.socials a svg{
+    width: 15px;
+    height: 15px;
+}
+.svg:hover{
+    transform: scale(1.2) translateY(-5px);
+    transition: .2s;
+    cursor: pointer;
+    color: #e2e2e2;
+}
+
+
+@media only screen and (max-width: 700px){
+    body{
+        position: relative;
+        font-family: Trebuchet MS;
+        width: 100%;
+        height: 100vh;
+    }
+    .abtinfo{
+        width: 100%;
+    }
+    .picc{
+        display: block;
+        background: transparent;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: center -70px;
+        margin-left: 50%;
+        margin-top: 1.5%;
+    }
+    .abtinfo p{
+        font-size: 1em;
+        font-weight: 300;
+        word-spacing: 10px;
+        line-height: 2;
+        margin-top: 2%;
+    }
+    .pic{
+        display: none;
+    }
+    .socials{
+        margin-top: -10%;
+        margin-left: 65%;
+        display: flex;
+    }
+}
